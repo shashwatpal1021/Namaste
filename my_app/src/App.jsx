@@ -3,6 +3,12 @@ import './App.css'
 import UseEffectReact from './Hooks/UseEffectReact'
 import UseState from './Hooks/UseState'
 import UseContextReact from './Hooks/UseContextReact';
+import UseReducerReact from './Hooks/useReducerReact';
+import UseMemoReact from './Hooks/UseMemoReact';
+import UseCallBackReact from './Hooks/UseCallBackReact';
+import UseRefReact from './Hooks/UseRefReact';
+import UseLayourEffect from './Hooks/UseLayourEffect';
+import UseCustomHook1 from './Hooks/UseCustomHook1';
 
 
 export const ThemeContext = createContext('light');
@@ -19,6 +25,12 @@ function App() {
       <ThemeContext.Provider value="dark">
         <UseContextReact />
       </ThemeContext.Provider>
+      <UseReducerReact />
+      <UseMemoReact />
+      <UseCallBackReact />
+      <UseRefReact />
+      <UseLayourEffect />
+      <UseCustomHook1 />
     </div>
   )
 }
