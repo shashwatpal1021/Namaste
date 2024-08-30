@@ -12,6 +12,8 @@ import UseLayoutEffect from './Hooks/UseLayoutEffect';
 import { UseIdReact } from './Hooks/UseIdReact';
 import UseCustomeHook2 from './Hooks/UseCustomeHook2';
 import UseCustomHook3 from './Hooks/UseCustomHook3';
+import RecoilApp from './Recoil/RecoilApp';
+import { RecoilRoot } from 'recoil';
 
 
 export const ThemeContext = createContext('light');
@@ -37,6 +39,9 @@ function App() {
       <UseIdReact />
       <UseCustomeHook2 />
       <UseCustomHook3 />
+      <RecoilRoot>
+        <RecoilApp/>
+      </RecoilRoot>
     </div>
   )
 }
