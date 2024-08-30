@@ -29,7 +29,7 @@ const UseEffectReact = () => {
   return (
     <>
       <h1>UseEffect</h1>
-  <button onClick={toggle} className="bg-red-500">Get Data</button>
+      <button onClick={toggle} className="bg-red-500">Get Data</button>
       <div>{data.length}</div>
       {!show ? <h1>Loading</h1> : data.map(item => <div key={item.id}>{item.name}</div>)}
       <hr />

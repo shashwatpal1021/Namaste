@@ -7,8 +7,11 @@ import UseReducerReact from './Hooks/useReducerReact';
 import UseMemoReact from './Hooks/UseMemoReact';
 import UseCallBackReact from './Hooks/UseCallBackReact';
 import UseRefReact from './Hooks/UseRefReact';
-import UseLayourEffect from './Hooks/UseLayourEffect';
 import UseCustomHook1 from './Hooks/UseCustomHook1';
+import UseLayoutEffect from './Hooks/UseLayoutEffect';
+import { UseIdReact } from './Hooks/UseIdReact';
+import UseCustomeHook2 from './Hooks/UseCustomeHook2';
+import UseCustomHook3 from './Hooks/UseCustomHook3';
 
 
 export const ThemeContext = createContext('light');
@@ -29,8 +32,11 @@ function App() {
       <UseMemoReact />
       <UseCallBackReact />
       <UseRefReact />
-      <UseLayourEffect />
+      <UseLayoutEffect />
       <UseCustomHook1 />
+      <UseIdReact />
+      <UseCustomeHook2 />
+      <UseCustomHook3 />
     </div>
   )
 }

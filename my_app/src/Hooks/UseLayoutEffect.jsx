@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef } from "react";
 
-const UseLayourEffect = () => {
+const UseLayoutEffect = () => {
   const ref = useRef(null)
 
   useLayoutEffect(() => {
@@ -13,5 +13,5 @@ const UseLayourEffect = () => {
     </>
   )
 }
-export default UseLayourEffect;
+export default UseLayoutEffect;
 
