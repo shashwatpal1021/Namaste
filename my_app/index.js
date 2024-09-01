@@ -1,12 +1,20 @@
-let s = "shashwat"
+// there are n number of stairs and you can climb either 1 step or 2 step at a time.write a code to calculate number of ways we can climb n stairs
 
-function reverseStr(s) {
-  if (s.length <= 1) {
-     return s
+
+function climbStairs(n) {
+  if (n <= 1) {
+    return 1
   }
-  return reverseStr(s.slice(1))+s[0]
+  let first = 1
+  let sec = 1
+  for (let i = 2; i <= n; i++) {
+    let current = first + sec; 
+    first = sec 
+    sec = current 
+  }
+  return sec
 }
- 
-const str = reverseStr(s)
- 
- console.log(str)
+
+const res = climbStairs(10)
+console.log(res)
+

@@ -25,7 +25,8 @@ function App() {
       <h1 >
         Hello world!
       </h1>
-      <UseState />
+      <div>
+        {/* <UseState />
       <UseEffectReact />
       <ThemeContext.Provider value="dark">
         <UseContextReact />
@@ -41,7 +42,9 @@ function App() {
       <UseCustomHook3 />
       <RecoilRoot>
         <RecoilApp/>
-      </RecoilRoot>
+      </RecoilRoot> */}
+      </div>
+      
     </div>
   )
 }

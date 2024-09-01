@@ -7,7 +7,7 @@ function reducer(state, action) {
     case 'increament':
       return { count: state.count + 1 };
     case 'decreament':
-      return {count: state.count - 1};
+      return { count: state.count - 1 };
     default:
       throw new Error();
   }
@@ -15,13 +15,13 @@ function reducer(state, action) {
 
 const UseReducerReact = () => {
 
-  const [state,dispatch]=useReducer(reducer,initialCount)
-  
+  const [state, dispatch] = useReducer(reducer, initialCount)
+
   const increament = () => {
-    dispatch({type:'increament'})
+    dispatch({ type: 'increament' })
   }
   const decrement = () => {
-    dispatch({type:'decreament'})
+    dispatch({ type: 'decreament' })
   }
   return (
     <>
