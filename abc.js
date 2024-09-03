@@ -12,6 +12,7 @@
 let symbola = Symbol();
 let symbolb = Symbol();
 // console.log(a == b);
+// console.log("hello")
 
 // what is prototype in js
 // every function & object has a property by default called prototype.
