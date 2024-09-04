@@ -261,3 +261,6 @@ fetchData("https://example.com")
   .catch(error => {
     console.error(error); // Output: "Error fetching data." (if URL is different)
   });
+
+
+
