@@ -1,0 +1,14 @@
+{% extends "layout.html" %} {% block title %} chai Page {% endblock title %}
+{%block content %}
+<h1 class="text-3xl">chai second aur code</h1>
+<div class="grid grid-cols-3 gap-4 w-[20%] m-4">
+  {% for chai in chais %}
+  <div class="bg-gray-500 p-5">
+    <img class="rounded h-[20px]" src="{{chai.image.url}}" alt="" />
+    <h1>{{chai.name}}</h1>
+    <a href="{% url 'chai_detail'  chai.id %}">{{chai.name}}</a>
+    <button>{{chai.type}}-{{chai.id}}</button>
+  </div>
+</div>
+
+{% endfor %} {% endblock content %}
